@@ -1,12 +1,12 @@
 #####################################
-DESLOCMENTO NOS NÓS
+DESLOCMENTO NOS NÃ“S
 -------------------------------------
-NÓ	DES. X (mm)	DES. Y (mm)
+NÃ“	DES. X (mm)	DES. Y (mm)
 -------------------------------------
 #####################################
-REAÇÕES DE APOIO
+REAÃ‡Ã•ES DE APOIO
 -------------------------------------
-Nó	Fx(kN)		Fy(kN)
+NÃ³	Fx(kN)		Fy(kN)
 -------------------------------------
 ###########################################
 DESLOCAMENTOS AXIAIS DOS MEMBROS
@@ -14,7 +14,8 @@ DESLOCAMENTOS AXIAIS DOS MEMBROS
 MEMBRO		D'i (mm)	D'j (mm)
 -------------------------------------------
 ###########################################################
-ESFORÇOS AXIAIS NOS MEMBROS
+ESFORÃ‡OS AXIAIS NOS MEMBROS
 -----------------------------------------------------------
-MEMBRO		F'i (KN)	F'j (KN)	TENSÕES
+MEMBRO		F'i (KN)	F'j (KN)	TENSÃ•ES
 -----------------------------------------------------------
+010asasdasdasd
