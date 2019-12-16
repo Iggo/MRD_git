@@ -19,6 +19,9 @@
     <Text Include="2.txt" />
     <Text Include="g_1.txt" />
     <Text Include="g_2.txt" />
+    <Text Include=".txt">
+      <Filter>Arquivos de Recurso</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

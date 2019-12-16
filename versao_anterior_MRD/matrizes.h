@@ -28,12 +28,15 @@
 
 using namespace std;
 
+double** invermat(int n, double** a);
+
+/*
 double determinante(double** matriz, int tamanho);
 
 double** inversa(double** matrix, int tam);
 
 double** transposta(double** matriz, double** matriz_cofator, int tam);
-
+*/
 double* multi_mat(double** mat_1, double* mat_2, int lin_1, int col_1);
 
 void imprimir_mat(double** matriz, int linhas, int colunas);
