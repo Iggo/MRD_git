@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include=".txt" />
     <Text Include="1.txt" />
     <Text Include="2.txt" />
     <Text Include="g_1.txt" />

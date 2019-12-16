@@ -169,6 +169,10 @@ int main()
         }
     }
 
+    for (int i = 0; i < num_nos; i++) {
+        cout << i << " " << " id_x " << vet_nos[i].get_id_x() << " id_y " << vet_nos[i].get_id_y() << endl;
+    }
+
     string nome_membros;
     cout << "DIGITE O NOME DO ARQUIVO DE MEMBROS (mínusculo com a extensão .txt): ";
     cin  >> nome_membros;
@@ -240,6 +244,21 @@ int main()
     k.set_gls(gls);
 
     k.set_mat_global(vet_membros,num_membros, contador);
+
+    double **mat_inv;
+
+    mat_inv = new double*[gls];
+
+    for (int i = 0; i < gls; i++)
+        mat_inv[i] = new double[gls];
+
+    for (int i = 0; i < gls; i++)
+        for (int j = 0; j < gls; j++)
+            mat_inv[i][j] = k.get_mat_global(i, j);
+
+    cout << "gls: " << k.get_gls() << endl;
+
+    imprimir_mat(k.get_mat(), contador, contador);
 
     k.set_vet_deslocamento(k.get_mat(),forcas,gls);
 
@@ -341,6 +360,8 @@ int main()
 
         if (vet_membros[i].get_esf_axi(0) < 0) 
             arq_resultado << "TRAÇÃO" << endl;
+        else if (vet_membros[i].get_esf_axi(0) == 0)
+            arq_resultado << "NEUTRA" << endl;
         else
             arq_resultado << "COMPRESSÃO" << endl;
     }
@@ -357,6 +378,8 @@ int main()
     free(vet_nos);
 
     free(forcas);
+
+    cout << "Deu Certo" << endl;
 
     return 0;
 }

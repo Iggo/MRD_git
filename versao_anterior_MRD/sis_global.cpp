@@ -56,7 +56,9 @@ void sis_global::set_vet_deslocamento(double** matriz, double* forcas, int gl)
 {
     vet_deslocamento = (double*)malloc(gl * sizeof(double));
 
-    vet_deslocamento = multi_mat(inversa(matriz, gl), forcas, gl, gl);
+    //imprimir_mat(inversa(matriz, gl), gl, gl);
+
+    vet_deslocamento = multi_mat(invermat(gl,matriz), forcas, gl, gl);
 }
 
 void sis_global::set_vet_forcas(double** matriz, double* forcas, int gl, int n)
